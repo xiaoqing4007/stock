@@ -1,0 +1,32 @@
+Branch:
+git branch       //   check
+git checkout master   //切换分支
+git branch -a   显示所有分支
+参考https://juejin.cn/post/7137816148933869599
+
+
+git branch -r   显示远程分支
+git branch -D master    删除本地分支
+git push 远程名字 -D 分支名字
+
+
+
+
+登录上传步骤：
+1-全局设置
+git config --global user.name
+Qinghua Chen
+git config --global user.email
+chenqinghua1126@gmail.com
+2-创建仓库
+git init
+touch README.md
+git add README.md
+git commit -m '注释'
+git remote add 远程git名字 https://github.com/xiaoqing4007/stock.git
+git lush -u stock "master" 
+
+3-已有仓库
+cd existing_git-repo
+git remote add 远程git名字 https://github.com/xiaoqing4007/stock.git
+git push -u stock "master" 
